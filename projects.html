@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projecten | Lars van Dam - Portfolio</title>
+    <title>Projecten | Jonathan Yang - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar">
             <div class="nav-container">
-                <div class="logo"><a href="index.html">Johhny<span>.</span>dev</a></div>
+                <div class="logo"><a href="index.html">Yohnnys<span>.</span>dev</a></div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">Over mij</a></li>
@@ -27,42 +27,133 @@
             <div class="container">
                 <h1>Projecten</h1>
                 <div class="divider"></div>
-                <p class="subtitle">Projecten van tijdens mijn opleiding</p>
+                <p class="subtitle">Een diepgaand overzicht van mijn werk tijdens de opleiding Toegepaste Informatica</p>
             </div>
         </section>
 
-        <section class="projects-grid-section">
-            <div class="container projects-grid">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>EcoTrack</h3>
-                    <p>Duurzame lifestyle tracker met realtime CO₂-berekening. Gebouwd met React, Chart.js en Firebase.</p>
-                    <div class="project-tags"><span>React</span><span>Firebase</span><span>UX Design</span></div>
-                    <a href="#" class="project-link">Bekijk project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-store"></i></div>
-                    <h3>ModaShop</h3>
-                    <p>Moderne e‑commerce front-end met winkelwagenfunctionaliteit en responsive design. Next.js + Stripe mock.</p>
-                    <div class="project-tags"><span>Next.js</span><span>Tailwind</span><span>API integratie</span></div>
-                    <a href="#" class="project-link">Bekijk project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-plant"></i></div>
-                    <h3>PlantPare</h3>
-                    <p>Platform voor plantenliefhebbers: community forum + verzorgingsherinneringen. Vue.js, Node.js, MongoDB.</p>
-                    <div class="project-tags"><span>Vue.js</span><span>Node</span><span>MongoDB</span></div>
-                    <a href="#" class="project-link">Bekijk project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-vr-cardboard"></i></div>
-                    <h3>ArtVisor</h3>
-                    <p>Virtuele galerij met WebGL en 3D‑interacties. Experimenteel concept voor kunstexposities online.</p>
-                    <div class="project-tags"><span>Three.js</span><span>WebGL</span><span>Creative coding</span></div>
-                    <a href="#" class="project-link">Bekijk project →</a>
+        <div class="container">
+            <!-- PROJECT 1: TaskFlow -->
+            <div class="project-detail" id="taskflow">
+                <div class="project-detail-inner">
+                    <div class="project-image">
+                        <img src="Afbeeldingen/TaskFlow.png" alt="TaskFlow - projectmanagement tool">
+                    </div>
+                    <div class="project-info">
+                        <h2>TaskFlow</h2>
+                        <div class="project-context">
+                            <strong>Context:</strong> Voor het vak Web Development. Moesten wij een webapplicatie maken als ons project. Mijn project was TaskFlow. TaskFlow is een project en taakbeheer webapplicatie, ontworpen om teams te helpen bij het organiseren van hun werk. Het project vereiste een volledige implementatie van zowel backend als frontend, met een focus op gebruikersbeheer, rolgebaseerde toegang en labels voor projecten en ook taken.
+                        </div>
+                        <div class="learned-box">
+                            <h4><i class="fas fa-graduation-cap"></i> Wat ik leerde</h4>
+                            <ul>
+                                <li>Ontwikkelen van een volledige webapplicatie met <strong>Laravel</strong> (MVC, Eloquent ORM, migraties).</li>
+                                <li>Realtime interactiviteit zonder complexe JavaScript frameworks dankzij <strong>Laravel Livewire</strong> (wire:model, wire:click, livewire componenten).</li>
+                                <li>Werken met <strong>FluxUI</strong> – een componentenbibliotheek voor Livewire – voor een consistente en snelle UI-ontwikkeling.</li>
+                                <li>Implementeren van <strong>Rolgebaseerd Toegangsbeheer (RBAC)</strong> met Laravel Gates en Policies, inclusief propagatie van rechten over projecthiërarchieën.</li>
+                                <li>Bouwen van een hiërarchische projectstructuur met recursieve relaties in Eloquent en efficiënte database queries.</li>                                
+                            </ul>
+                        </div>
+                        <div class="contribution-box">
+                            <h4><i class="fas fa-user-check"></i> Mijn bijdrage</h4>
+                            <p>Ik was volledig verantwoordelijk voor de backend (Laravel) en frontend (Livewire + FluxUI). Ik ontwierp de database schema's, implementeerde de RBAC-logica met Policies, de hiërarchische queries, en bouwde de Livewire componenten voor taakbeheer, ledenbeheer enzovoort.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+
+            <!-- PROJECT 2: Chez Natalie -->
+            <div class="project-detail" id="chez-natalie">
+                <div class="project-detail-inner">
+                    <div class="project-image">
+                        <img src="Afbeeldingen/ChezNatalie.png" alt="ModaShop e-commerce">
+                    </div>
+                    <div class="project-info">
+                        <h2>Chez Natalie</h2>
+                        <div class="project-context">
+                            <strong>Context:</strong> Tijdens het tweede semester kregen we binnen het vak Skills Integration de opdracht om een project uit te voeren voor een externe klant. Onze klant, Chez Natalie, een bed & breakfast, vroeg ons om in een team van zes personen te werken aan een webapplicatie.
+                            Hierbij maakten we gebruik van prototypes die door andere teams in het vorige semester waren uitgewerkt.
+                        </div>
+                        <div class="learned-box">
+                            <h4><i class="fas fa-graduation-cap"></i> Wat ik leerde</h4>
+                            <ul>
+                                <li>Correct implementeren van CRUD-functionaliteit met databasequeries in een Laravel-project met SQLite.</li>
+                                <li>Werken met <strong>FluxUI</strong> – een componentenbibliotheek voor Livewire – voor een consistente en snelle UI-ontwikkeling.</li>
+                                <li>Omgaan met mergeconflicten in GitHub.</li>
+                                <li>Navigeren en werken binnen de code van andere teamleden, zodat ik bestaande structuren kon begrijpen en hierop kon voortbouwen.</li>
+                                <li>Leren werken in een groepsomgeving en binnen een projectteam.</li>
+                            </ul>
+                        </div>
+                        <div class="contribution-box">
+                            <h4><i class="fas fa-user-check"></i> Mijn bijdrage</h4>
+                            <p>In het teamproject heb ik gewerkt aan zowel de front-end als de back-end van drie pagina’s: het boeken van een kamer (klant), het bekijken van boekingen (klant) en het beheren van accounts (admin).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 3: Poutrel - Reserveringssysteem voor klim- en sportcentrum -->
+            <div class="project-detail" id="poutrel">
+                <div class="project-detail-inner">
+                    <div class="project-image">
+                        <img src="Afbeeldingen/Poutrel.png" alt="Poutrel reserveringssysteem">
+                    </div>
+                    <div class="project-info">
+                        <h2> Poutrel Movement Studio</h2>
+                        <div class="project-context">
+                            <strong>Context:</strong> Tijdens het eerste semester kregen we binnen het vak Skills Integration de opdracht om een project uit te voeren voor een externe klant. Onze klant, Poutrel, een klim- en sportcentrum, kampte met een probleem: veel van hun processen verliepen nog manueel. Zo moesten lessen bijvoorbeeld telefonisch geboekt worden.
+                            In een team van zes personen werkten we aan een prototype van een webapplicatie voor Poutrel, met als doel hun werking te digitaliseren en efficiënter te maken.
+                        </div>
+                        <div class="learned-box">
+                            <h4><i class="fas fa-graduation-cap"></i> Wat ik leerde</h4>
+                            <ul>
+                                <li>Het gebruik van het programma Figma.</li>
+                                <li>Leren omgaan met een niet-technische klant.</li>
+                                <li>Leren werken in een groepsomgeving en binnen een projectteam.</li>
+                            </ul>
+                        </div>
+                        <div class="contribution-box">
+                            <h4><i class="fas fa-user-check"></i> Mijn bijdrage</h4>
+                            <p>In dit teamproject is mijn bijdrage niet eenvoudig in één rol te vatten. Ik fungeerde als een “jack of all trades”, waarbij ik op verschillende vlakken ondersteuning bood aan het team. Mijn rol kan het best omschreven worden als assistent en editor.</p>
+                            <p>Ik hielp teamleden door hen te ondersteunen bij hun taken, mee na te denken over ideeën en constructieve feedback te geven. Zo droeg ik bij door verbeterpunten aan te wijzen en alternatieve oplossingen voor te stellen waar nodig.</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECT 4: IoT Essentials – Cloudgestuurde Klimaatregeling -->
+            <div class="project-detail" id="iot-essentials">
+                <div class="project-detail-inner">
+                    <div class="project-image">
+                        <img src="Afbeeldingen/IoTProject.jpg" alt="IoT setup met BH1750 en BMP280">
+                    </div>
+                    <div class="project-info">
+                        <h2>IoT Essentials – Smart Climate Control</h2>
+                        <div class="project-context">
+                            <strong>Context:</strong> Voor het vak "IoT Essentials" ontwikkelde ik een volledig cloudgestuurd klimaatsysteem. Het doel was om een BH1750-lichtsensor en een BMP280-temperatuur- en druksensor via I2C uit te lezen, de meetwaarden te publiceren naar een online dashboard (ThingSpeak) via MQTT, en zowel de lichtintensiteit (PWM-gestuurde LED) als de temperatuur (aansturen van een verwarmingselement) te regelen. Een matrix-keypad laat de gebruiker toe om gewenste temperatuur- en lichtdoelwaarden in te stellen. Het systeem sluit de lus: het past automatisch de LED‑helderheid en de verwarming aan om de doelen te bereiken. De gegevens zijn zichtbaar op een terminal én op het ThingSpeak-dashboard.
+                        </div>
+                        <div class="learned-box">
+                            <h4><i class="fas fa-graduation-cap"></i> Wat ik leerde</h4>
+                            <ul>
+                                <li>I2C-communicatie met sensoren (BH1750, BMP280) op een Raspberry Pi (Python, smbus2).</li>
+                                <li>Publiceren van sensordata naar de cloud via <strong>MQTT</strong> (ThingSpeak) met behoud van connectiviteit.</li>
+                                <li>Implementeren van een matrix‑keypad met debouncing en realtime invoer (WiringPi).</li>
+                                <li>Analoge uitgangen via <strong>software PWM</strong> voor LED‑helderheidsregeling.</li>
+                                <li>Aansturen van een verwarmingselement (transistor/relay) via GPIO om de temperatuur te regelen.</li>
+                                <li><strong>Closed‑loop control:</strong> vergelijken van gemeten waarden met doelen en automatisch bijsturen van LED en verwarming.</li>
+                                <li>Foutafhandeling en reconnectie van de MQTT-client bij netwerkproblemen.</li>
+                                <li>Documentatie: schakelschema, foto’s van de setup, en een <strong>demonstratievideo</strong> (max. 2 min.) op YouTube.</li>
+                            </ul>
+                        </div>
+                        <div class="contribution-box">
+                            <h4><i class="fas fa-user-check"></i> Mijn bijdrage</h4>
+                            <p>Dit was een <strong>individueel project</strong>. Ik was volledig verantwoordelijk voor het ontwerp, de hardware‑opbouw (Raspberry Pi, sensoren, keypad, LED, vermogensregeling), de volledige software (Python‑script met MQTT, PWM, keypad‑scanning, closed‑loop logica) en de integratie met ThingSpeak. Ook maakte ik de demonstratievideo en het technische rapport met zelfevaluatie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Eventuele extra call-to-action (uitgecommentarieerd) -->
         <!--
         <section class="contact-cta">
             <div class="container cta-box">
@@ -76,8 +167,11 @@
 
     <footer>
         <div class="container footer-content">
-            <div class="footer-info"><p>© 2025 Jonathan Yang – e-portfolio</p>
-            <div class="footer-social"><a href="https://github.com/Yohnnys" aria-label="GitHub"><i class="fab fa-github"></i></a><a href="https://www.linkedin.com/in/jonathan-zirui-yang/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><!--<a href="#" aria-label="Instagram"><i class="fab fa-instagram">--></i></a></div>
+            <div class="footer-info"><p>© 2025 Jonathan Yang – e-portfolio</p></div>
+            <div class="footer-social">
+                <a href="https://github.com/Yohnnys" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jonathan-zirui-yang/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
     </footer>
 </body>
