@@ -325,20 +325,24 @@ h2 {
 }
 
 /* ---------- ABOUT PAGINA ---------- */
+/* ===== HEADER MET PROFIELAFBEELDING ===== */
 .page-header {
     text-align: left;
     padding: 2rem 0 1rem;
     background: var(--lichtgrijs);
 }
+
 .header-with-image {
     display: flex;
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
+
 .profile-image {
     flex-shrink: 0;
 }
+
 .profile-image img {
     width: 100px;
     height: 100px;
@@ -347,12 +351,15 @@ h2 {
     border: 3px solid var(--beige);
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
+
 .header-text {
     flex: 1;
 }
+
 .header-text h1 {
     margin-bottom: 0.25rem;
 }
+
 .divider {
     margin-left: 0;
     margin-right: auto;
@@ -364,6 +371,7 @@ h2 {
     margin-top: 0.5rem;
 }
 
+/* ===== ABOUT INTRO ===== */
 .about-intro {
     padding: 4rem 0;
 }
@@ -384,6 +392,7 @@ h2 {
     color: #2e2c2a;
 }
 
+/* ===== PERSOONLIJKE GEGEVENS BLOK ===== */
 .personal-details {
     margin-top: 1.8rem;
     display: flex;
@@ -399,19 +408,26 @@ h2 {
     color: var(--terracotta);
 }
 
-.about-illustration {
-    flex: 1;
-    background: var(--grijsblauw);
-    border-radius: 48px;
-    padding: 2rem;
-    text-align: center;
+/* ===== CV BUTTONS ===== */
+.cv-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
-.about-illustration i {
-    font-size: 6rem;
-    color: var(--beige);
+.btn-outline-light {
+    background: transparent;
+    border: 2px solid var(--terracotta);
+    color: var(--terracotta);
 }
 
+.btn-outline-light:hover {
+    background: var(--terracotta);
+    color: white;
+}
+
+/* ===== TECHNISCHE SKILLS ===== */
 .skills {
     padding: 3rem 0;
     background: var(--wit);
@@ -440,6 +456,64 @@ h2 {
     margin-bottom: 0.6rem;
 }
 
+/* ===== SOFT SKILLS ===== */
+.soft-skills-section {
+    padding: 3rem 0;
+    background: var(--wit);
+}
+
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.soft-skill-card {
+    background: var(--lichtgrijs);
+    padding: 1.8rem 1.2rem;
+    border-radius: 24px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.soft-skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.05);
+}
+
+.soft-skill-card i {
+    font-size: 2.5rem;
+    color: var(--terracotta);
+    margin-bottom: 1rem;
+}
+
+.soft-skill-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--grijsblauw);
+}
+
+.soft-skill-card p {
+    font-size: 0.9rem;
+    color: #5f5c58;
+    line-height: 1.4;
+}
+
+/* ===== HOBBY EN TOEKOMST SECTIES ===== */
+.hobby-section, .future-section {
+    padding: 2rem 0;
+}
+
+.hobby-section p, .future-section p {
+    margin-bottom: 1.2rem;
+}
+
+.hobby-section p:last-of-type, .future-section p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* ===== FUN FACT (OPTIONEEL) ===== */
 .fun-fact {
     padding: 3rem 0 5rem;
 }
@@ -465,35 +539,18 @@ h2 {
     margin-bottom: 0.8rem;
 }
 
-.cv-actions {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .header-with-image {
+        flex-direction: column;
+        text-align: center;
+    }
+    .divider {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
-.btn-outline-light {
-    background: transparent;
-    border: 2px solid var(--terracotta);
-    color: var(--terracotta);
-}
-.btn-outline-light:hover {
-    background: var(--terracotta);
-    color: white;
-}
-
-.about-illustration img {
-    width: 100%;
-    max-width: 320px;
-    border-radius: 32px;
-    object-fit: cover;
-    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-}
-
-.about-illustration img:hover {
-    transform: scale(1.02);
-}
+        
 
 /* ---------- PROJECTEN PAGINA ---------- */
 /* Extra styling voor de gedetailleerde projectweergave */
